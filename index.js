@@ -7,12 +7,13 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 
 app.get('/api/gold-prices', (req, res) => {
-  res.json({
-    "24K": { sell: "280", buy: "285" },
-    "22K": { sell: "260", buy: "265" },
-    "21K": { sell: "250", buy: "255" },
-    "18K": { sell: "220", buy: "225" }
-  });
+res.json({
+  "24K": { sell: "287.90", buy: "290.00" },
+  "22K": { sell: "263.85", buy: "266.00" },
+  "21K": { sell: "251.50", buy: "254.00" },
+  "18K": { sell: "215.50", buy: "218.00" }
+});
+
 });
 
 app.listen(PORT, () => {
