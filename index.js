@@ -8,12 +8,23 @@ app.use(cors());
 
 app.get('/api/gold-prices', (req, res) => {
 res.json({
-  "24K": { sell: "287.90", buy: "290.00" },
-  "22K": { sell: "263.85", buy: "266.00" },
-  "21K": { sell: "251.50", buy: "254.00" },
-  "18K": { sell: "215.50", buy: "218.00" }
-});
-
+{
+  "timestamp": 1748932281,
+  "metal": "XAU",
+  "currency": "SAR",
+  "exchange": "GOLDAPI",
+  "symbol": "GOLDAPI:XAUSAR",
+  "open_time": 1748908800,
+  "ask": 12617.0887,
+  "bid": 12613.0751,
+  "price": 12615.2132,
+  "ch": -69.281,
+  "price_gram_24k": 405.5885,
+  "price_gram_22k": 371.7895,
+  "price_gram_21k": 354.89,
+  "price_gram_20k": 337.9904,
+  "price_gram_18k": 304.1914,
+}
 });
 
 app.listen(PORT, () => {
